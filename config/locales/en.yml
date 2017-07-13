@@ -1,0 +1,32 @@
+en:
+  hello : "Bienvenue !"
+  activerecord:
+    attributes:
+      news:
+        title: 'Titre'
+        summary: 'Resume'
+        content: 'Contenu'
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "Adresse email invalide"
+              taken: "Adresse email invalide"
+              invalid: "Adresse email invalide"
+            password:
+              blank: "Please Specify a Password"
+              invalid: "differente"
+              confirmation: "differente"
+            password_confirmation:
+              blank: "Please Specify a Password Confirmation"
+              invalid: "differente"
+              confirmation: "differente"
+        news:
+          attributes:
+            title:
+              too_short: "est trop court"
+              blank: " ne peut pas etre vide"
+            content:
+              too_short: "est trop court"
+              blank: " ne peut pas etre vide"

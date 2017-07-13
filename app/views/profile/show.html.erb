@@ -1,0 +1,17 @@
+<% @user.each do |user| %>
+<% if user.profile.name == nil %>
+<p>GazooyName : @<%= user.username %></p>
+    <% else %>
+        <p>GazooyName : @<%= user.profile.name %></p>
+    <% end %>
+<div>
+  <p>Avatar :</p>
+  <%= image_tag(user.profile.avatar_url(:avatar)) %>
+</div>
+
+<%=
+  if user.username == current_user.username
+    link_to 'Editer', edit_path(user.username), :id => "Editer"
+  end
+%>
+<% end %>

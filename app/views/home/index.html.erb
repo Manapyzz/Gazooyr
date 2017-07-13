@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-body">You're on Gazooyr !<br><br>Le twitter qu'il est vachement plus mieux</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <fieldset>
+        <legend>Tendances</legend>
+        <div class="well">
+
+        </div>
+      </fieldset>
+      </div>
+
+    <div class="col-md-8">
+      <fieldset>
+        <legend>Les derniers gazooies</legend>
+      <div class="jumbotron">
+        <% @last_gazooies.each do |gazooy| %>
+            <p><%= gazooy.text %></p>
+        <% end %>
+      </div>
+        </fieldset>
+    </div>
+
+  </div>
+
+</div>

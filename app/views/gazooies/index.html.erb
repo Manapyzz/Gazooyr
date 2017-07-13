@@ -1,0 +1,9 @@
+<div class="gazooies-block">
+  <% @posts.each do |post| %>
+      <div class="gazooy-block well">
+        <a href="/profile/<%= post.user.username %>" class="avatar"><%= image_tag(post.user.profile.avatar.thumb.url, class: 'avatar') %></a>
+        <%= post.text %>
+      </div>
+  <% end %>
+</div>
+</div>

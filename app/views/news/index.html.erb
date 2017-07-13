@@ -1,0 +1,11 @@
+<div class="news-block">
+  <% @news.each do |new| %>
+      <div class="new-block well">
+        <%= new.title %><br>
+        <%= new.summary %>
+        <%= link_to 'Editer', edit_news_path(new.id) %>
+      </div>
+  <% end %>
+
+  <%= link_to 'Ajouter', new_news_path %>
+</div>
